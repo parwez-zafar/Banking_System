@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 
 
-const port = 3000 || process.env.PORT
+const port = process.env.PORT || 3000
 
 // cart table settings
 mongoose.connect("mongodb://localhost:27017/BankingSystem", {
